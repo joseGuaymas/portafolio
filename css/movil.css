@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,12 +11,11 @@
 
 :root {
     scroll-behavior: smooth;
-    background-color: #00337C;
 }
 
 body {
-    max-width: 767px;
-    min-width: 320px;
+    min-width: 319px;
+    max-width: 320px;
     background-image: url(../assets/backgrounds/Simple\ Shiny\(3\).svg);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -39,14 +40,14 @@ header {
     gap: 80vw;
 }
 
-header .logo, img {
-    cursor: pointer;
-}
-
 header .logo {
-    color: #F0F3F2;
+    color: #03C988;
     display: flex;
+    font-size: 20px;
+    position: absolute;
     left: 5%;
+    font-family: 'Space Mono', monospace;
+    cursor: pointer;
 }
 
 nav {
@@ -67,10 +68,12 @@ nav {
     border-radius: 0 5%;
 }
 
+.home header #hamburguer,
 .home header nav #close {
     position: absolute;
     right: 5vw;
     top: 1vh;
+    cursor: pointer;
 }
 
 .home header nav ul,
@@ -162,21 +165,22 @@ main .img-personal img {
     height: 32px;
 }
 
-.scroll-box a img {
+.scroll-box a .down-arrow,
+.up-arrow {
     width: 100%;
     height: 100%;
 }
 
-.about-container{
+.about-container {
     display: flex;
     flex-direction: column;
     height: 100vh;
     justify-content: space-between;
     padding-bottom: 40px;
-    margin: 4em 2em 0;
+    margin: 2em 2em 0;
 }
 
-.title{
+.title {
     color: #03C988;
     text-decoration: underline;
     text-align: center;
@@ -185,7 +189,7 @@ main .img-personal img {
     padding-bottom: 20px;
 }
 
-.about-container p{
+.about-container p {
     font-weight: 300;
     font-size: 16px;
     text-align: left;
@@ -194,7 +198,7 @@ main .img-personal img {
 }
 
 .skills-section {
-    margin-top: 4em;
+    margin-top: 2em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -211,7 +215,7 @@ main .img-personal img {
 }
 
 .skills-list ul .html {
-    width: 75%;
+    width: 70%;
     background-color: #1C82AD;
 }
 
@@ -226,12 +230,17 @@ main .img-personal img {
 }
 
 .skills-list ul .bootstrap {
-    width: 50%;
+    width: 60%;
     background-color: #1C82AD;
 }
 
 .skills-list ul .python {
     width: 40%;
+    background-color: #1C82AD;
+}
+
+.skills-list ul .sql {
+    width: 70%;
     background-color: #1C82AD;
 }
 
@@ -262,16 +271,15 @@ main .img-personal img {
     right: 0;
 }
 
-.portfolio-container{
+.portfolio-section {
+    margin-top: 8em;
     display: flex;
-    justify-content: center;
     align-content: center;
-    gap: 1em;
     justify-content: center;    
     flex-direction: column;
 }
 
-.portfolio-section {
+.portfolio-container {
     display: flex;
     flex-wrap: wrap;
 }
@@ -298,23 +306,28 @@ main .img-personal img {
     color: #F0F3F2;
     font-size: 16px;
     background: #00347ca4;
-    height: 18%;
+    height: 25%;
     width: 100%;
     transition: .5s;
     z-index: 1;
     bottom: 0;
     opacity: 0.5;
-    padding-top: 5px;
+    padding-top: 3px;
     padding-left: 7px;
 }
 
-.text-container h3{
+.text-container h3 {
     font-weight: bold;
     opacity: 1;
 }
 
-.text-container span {
-    padding: 10px;
+.text-container a {
+    text-decoration: none;
+}
+
+.text-container a span {
+    padding: 8px;
+    color: #F0F3F2;
     background: #1C82AD;   
     visibility: hidden; 
     width: 30%;
@@ -329,7 +342,7 @@ main .img-personal img {
 .portfolio-card:hover .text-container {
     height: 50%;
     display: flex;
-    gap: 20px;
+    gap: 10px;
     flex-direction: column;
     font-weight: 400;
     opacity: 0.9;
@@ -346,22 +359,56 @@ main .img-personal img {
     transform: scale(1.1) rotate(.1deg);
 }
 
+.study-section {
+    margin-top: 3em;
+}
+
+.study-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.study-card {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.study-card img {
+    margin: 1em;
+    width: 170px;
+    height: 170px;
+    border-radius: 60%;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: filter 300ms;
+    box-shadow: 3px 3px 5px #1C82AD;
+}
+
+.study-card img:is(:hover, :focus) {
+    filter: grayscale(0%)
+}
+
 .contact-container {
     display: flex;
-    margin: 4rem auto 0;
-    padding-bottom: 4em;
+    flex-direction: column;
+    gap: 1em;
+    margin: 5em auto 0;
+    padding-bottom: 1em;
     height: 70vh;
-    width: 90%;
+    width: 100%;
     justify-content: center;
     border-bottom: .5px solid #03C988;
 }
 
 form {
     width: 90%;
-    display: grid;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 8px;
+    margin: auto;
 } 
 
 form label {
@@ -381,8 +428,28 @@ form input, textarea {
     font-size: 16px;
 }
 
+.form-submit {
+    cursor: pointer;
+}
+
+.contact-container p {
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1C82AD;
+}
+
+.hidden {
+    display: none;
+}
+
+.up-arrow {
+    transform: rotate(180deg);
+}
+
 .footer {
     display: flex;
+    position: relative;
     margin: 20px;
     align-items: center;
     justify-content: center;
@@ -399,9 +466,9 @@ form input, textarea {
     flex-direction: row;
 }
 
-.icon{
-    height: 22px;
-    width: 20px;
+.icon {
+    height: 24px;
+    width: 24px;
     margin: 0 20px 0 5px;
 }
 
@@ -410,7 +477,39 @@ form input, textarea {
     color: #F0F3F2;
 }
 
-@media (min-width: 1024px){
+.thanks-page {
+    min-height: 100vh;
+    text-align: center;
+}
 
-    
+.thanks-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.thanks-container h2, h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #F0F3F2;
+    padding: 5px 0;
+}
+
+.thanks-page p {
+    color: #03C988;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.thanks-page a {
+    color: #F0F3F2;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.thanks-page a:hover {
+    color: #1C82AD;
 }

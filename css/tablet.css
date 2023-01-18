@@ -1,0 +1,47 @@
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        max-width: 768px;
+    }
+
+    .home header .logo {
+        font-size: 24px;
+    }
+
+    .home header img { 
+        height: 30px;
+        width: 30px;
+    }
+
+    .about-container {
+        justify-content: space-around;
+    }
+ 
+    .portfolio-section {
+        margin-top: 1em;
+    }
+
+    .text-container {
+        height: 15%;
+    }
+    
+    .portfolio-card:hover .text-container {
+        height: 30%;
+    }
+    
+    .contact-container {
+        margin-top: 5em;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .scroll-box a img {
+        margin-top: 2em;
+    }
+
+    .social-media .icon {
+        width: 28px;
+        height: 28px;
+    }
+}

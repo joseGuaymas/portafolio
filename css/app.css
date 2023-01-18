@@ -1,0 +1,64 @@
+@media (min-width: 1024px) {
+    body {
+        max-width: 1200px;
+        font-size: 18px;
+        background: url(../assets/backgrounds/Simple\ Shiny\(2\).svg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .home header .logo {
+        font-size: 24px;
+    }
+
+    .home header img { 
+        height: 30px;
+        width: 30px;
+    }
+
+    main .img-personal img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .title{
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .portfolio-section,
+    .portfolio-container {
+        margin-top: 1em;
+    }
+
+    .portfolio-card {
+        width: 40%;
+        margin: 20px auto;
+    }
+
+    .text-container {
+        height: 18%;
+    }
+    
+    .portfolio-card:hover .text-container {
+        height: 35%;
+    }
+
+    .study-container {
+        margin: 2em 0;
+        flex-direction: row;
+        gap: 3em;
+    }
+    
+    .contact-container {
+        margin-top: 5em;
+    }
+
+    .form {
+        display: flex;
+        width: 800x;
+    }
+
+}
