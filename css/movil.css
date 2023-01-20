@@ -478,12 +478,12 @@ form input, textarea {
     display: block;
     margin: 10px auto 50px;
     transform: rotate(180deg);
-    width: 34.5px;
-    height: 34.5px;
+    width: 34.5;
+    height: 34.5;
 }
 
 .footer {
-    display: inline-block;
+    display: inline-flex;
     margin: 20px;
     align-items: center;
     justify-content: center;
