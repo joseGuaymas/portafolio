@@ -45,6 +45,14 @@
         margin: 20px;
     }
 
+    .scroll-box {
+        margin: 2em;
+    }
+
+    .scroll-box p {
+        font-size: 20px;
+    }
+
     .active{
         border-bottom: 1px solid #03C988;
         transition: .5s;
@@ -93,7 +101,7 @@
     }
     
     .portfolio-card:hover .text-container {
-        height: 30%;
+        height: 28%;
     }
 
     #formation {
@@ -115,7 +123,9 @@
         width: 50%;
     }
 
-    .up-arrow {
+    .scroll-box a .up-arrow {
+        width: 38.3px;
+        height: 38.3px;
         margin-bottom: 3em;
     }
 
