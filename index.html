@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio José Guaymas</title>
@@ -11,21 +11,20 @@
     <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
-    <section id="home" class="home">
+    <section id="home" class="section">
         <header>
             <div>
-                <a class="logo"> JG </a>
+                <a href="#home" class="logo"> JGR </a>
             </div>
             <img id="hamburguer" src="./assets/iconos/hamgurguer.svg" alt="">
 
             <nav>
                 <img id="close" class="" src="./assets/iconos/close.svg" alt="">
-
                 <ul>
                     <li><a href="#home">Home</a></li> 
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portafolio</a></li>
-                    <li><a href="#study">Formación</a></li>
+                    <li><a href="#formation">Formación</a></li>
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
             </nav>
@@ -41,11 +40,11 @@
             </div>
         </main>
         <div class="scroll-box">
-            <p>Conóceme</p>
+            <p>Conoceme</p>
             <a href="#about"> <img class="down-arrow" src="./assets/iconos/icons8-scroll-down-30.png" alt="down arrow icon"></a>
         </div>
     </section>
-    <section class="about-container" id="about">
+    <section class="section" id="about">
         <div>
             <h2 class="title">Sobre mí</h2>
             <p>
@@ -55,27 +54,27 @@
                 Tengo conocimientos en lenguajes y herramientas para afrontar nuevos compromisos, y principalmente gran capacidad analìtica y de aprendizaje constante. 
             </p>
             <p>
-                He volcado en esta página una breve reseña acerca de mis competencias, junto con mi portafolio de proyectos, donde se podrán observar dichas aptitudes y habilidades puestas en práctica. ¡Espero que lo disfrutes!         
+                He volcado en esta página una breve reseña acerca de mis competencias, junto con mi portafolio de proyectos, donde se podrán observar dichas aptitudes y habilidades puestas en práctica. ¡Espero que sea de tu agrado!         
             </p>
         </div>
         <div class="skills-section" id="skills">
             <h2 class="title">Skills</h2>
             <div class="skills-list">
                 <ul>
-                    <li class="bar html"> <span class="skill-name">HTML</span> <span class="progress">70%</span></li>
-                    <li class="bar css"> <span class="skill-name">CSS</span> <span class="progress">50%</span></li>
-                    <li class="bar js"> <span class="skill-name">JavaScript</span> <span class="progress">60%</span></li>
-                    <li class="bar sql"> <span class="skill-name">SQL</span> <span class="progress">70%</span></li>
+                    <li class="bar html"> <span class="skill-name">HTML</span> <span class="progress">60%</span></li>
+                    <li class="bar css"> <span class="skill-name">CSS</span> <span class="progress">45%</span></li>
+                    <li class="bar js"> <span class="skill-name">JavaScript</span> <span class="progress">55%</span></li>
+                    <li class="bar sql"> <span class="skill-name">SQL</span> <span class="progress">65%</span></li>
                     <li class="bar python"> <span class="skill-name">Python</span> <span class="progress">40%</span></li>
                     <li class="bar node"> <span class="skill-name">Node.js</span> <span class="progress">50%</span></li>
-                    <li class="bar bootstrap"> <span class="skill-name">Bootstrap</span> <span class="progress">60%</span></li>
-                    <li class="bar git"> <span class="skill-name">Git</span> <span class="progress">70%</span></li>
+                    <li class="bar bootstrap"> <span class="skill-name">Bootstrap</span> <span class="progress">45%</span></li>
+                    <li class="bar git"> <span class="skill-name">Git</span> <span class="progress">55%</span></li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <section class="portfolio-section" id="portfolio">
+    <section class="section" id="portfolio">
         <h2 class="title">Portafolio</h2>
         
         <div class="portfolio-container">
@@ -146,37 +145,35 @@
         </div>
     </section>
 
-    <section class="study-section" id="study">
+    <section class="section" id="formation">
         <h2 class="title">Plataformas de formación</h2>
-        <div class="study-container">
-            <div class="study-card">
+        <div class="formation-container">
+            <div class="formation-card">
                 <img src="./assets/img-estudios/logo-educacionIT.png" alt="">
             </div>
-            <div class="study-card">
+            <div class="formation-card">
                 <img src="./assets/img-estudios/utn-logo.jpg" alt="">
             </div>
-            <div class="study-card">
+            <div class="formation-card">
                 <img src="./assets/img-estudios/llogo-oracle-alura.png" alt="">
             </div>
-            <div class="study-card">
+            <div class="formation-card">
                 <img src="./assets/img-estudios/logo-udemy.png" alt="">
             </div>
         </div>
     </section>
 
-    <section class="contact-container" id="contact">
+    <section class="section" id="contact">
         <form id="form" action="https://formsubmit.co/josedguaymas@gmail.com" method="POST">
             <h2 class="title">Contacto</h2>
             <label>Nombre completo *</label>
             <input type="text" class="fomr-input" name="name" id="input-name">
-            <p id="form-coment" class="hidden">Este campo es obligatorio</p>
             <label>Correo electrónico *</label>
             <input type="email" class="fomr-input" name="email" id="input-email">
-            <p id="form-coment" class="hidden">Este campo es obligatorio</p>
-            <label for="">Deje su mensaje aquí</label>
+            <label>Deje su mensaje aquí</label>
             <textarea class="form-textarea" name="message" id="input-message" cols="30" rows="10"></textarea>
     
-            <input type="submit" value="Enviar mensaje" class="form-submit" id="btn-submit">
+            <input type="submit" value="Enviar mensaje" class="form-submit">
             <input type="hidden" name="_next" value="http://127.0.0.1:5500/html/thanks.html">
             <input type="hidden" name="_captcha" value="false">
         </form>
@@ -189,18 +186,18 @@
         </div>
     </section>
 
-    
     <section class="footer">
         <div class="social-media">
             <a href="https://github.com/joseGuaymas" target="_blank"><img class="icon" src="/assets/iconos/icons8-github.svg"></a>
             <a href="https://www.linkedin.com/in/jose-guaymas/" target="_blank"><img class="icon" src="/assets/iconos/icons8-linkedin-circled.svg"></a>
         </div>
         
-        <h5> Derechos reservados</h5>
+        <h5>© José Guaymas Rojas</h5>
 
     </div>
 
-    <script src="/js/hamburger.js"> </script>
-    <script src="/js/form-validation.js"> </script>
+    <script src="/js/hamburger.js"></script>
+    <script src="/js/form-validation.js"></script>
+
 </body>
 </html>

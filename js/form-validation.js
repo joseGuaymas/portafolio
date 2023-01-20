@@ -1,35 +1,23 @@
 let input__nombre = document.getElementById('input-name');
 let input__email = document.getElementById('input-email');
 let input__mensaje = document.getElementById('input-message');
-let submit = document.getElementById('btn-submit')
+let form = document.getElementById('form')
 let form__coments = document.querySelectorAll('#form-coment');
 
-window.addEventListener('load', () => {
-    input__nombre.value = '';
-    input__email.value = '';
-    input__mensaje.value = '';
-})
 
 function validarPalabra(palabra) {
     let esValida = false
-    const validar = new RegExp(`^[A-Z\u00f1\u00d1\]+$`,'i');
-    if(!palabra){
+    if(palabra.length == 0){
         esValida = false
     } else {
-        for (let i=0;i<palabra.length;i++){
-            if(!validar.test(palabra[i])){
-                esValida = false
-                break
-            }else{
-                esValida = true
-            }
+        esValida = true
         }
-    }
-   return esValida   
+
+        return esValida   
 }
 
-input__nombre.addEventListener('input', e => {
-    if (e.target.value.length == 0) {
+input__nombre.addEventListener('input', (e) => {
+    if (!validarPalabra(e.target.value)) {
         input__nombre.className = 'error'
         e.target.setCustomValidity('Debe ingresar al menos un caracter')
     }
@@ -39,10 +27,11 @@ input__nombre.addEventListener('input', e => {
     }
 })
 
-input__email.addEventListener('input', e => {
-    if (!e.target.value.includes('@')) {
+input__email.addEventListener('input', (e) => {
+    if ( (!validarPalabra(e.target.value)) || (!e.target.value.includes('@')) ) {
         input__email.className = 'error'
         e.target.setCustomValidity('Debe ingresar un correo válido')
+
     }
     else {
         input__email.className = 'noError'
@@ -51,7 +40,7 @@ input__email.addEventListener('input', e => {
 })
 
 input__mensaje.addEventListener('input', e => {
-    if (e.target.value.length == 0) {
+    if (!validarPalabra(e.target.value)) {
         input__mensaje.className = 'error'
         e.target.setCustomValidity('Debe ingresar al menos un caracter')
     }
@@ -61,14 +50,20 @@ input__mensaje.addEventListener('input', e => {
     }
 })
 
-submit.addEventListener('click', (e) => {
-    console.log('error')
-    e.preventDefault()
-    if (!validarPalabra(input__nombre) || (!validarPalabra(input__email)) || (!validarPalabra(input__mensaje)) ) {
-        console.log('error2')
-        for(let x = 0; x < form__coments.length; x++) {
-            form__coments[x].classList.toggle('hidden')
-            
-        }
+form.addEventListener('submit', (e) => {
+    if (!validarPalabra(input__nombre.value) || (!validarPalabra(input__email.value)) ) {
+        input__nombre.setAttribute('placeholder','Este campo es obligatorio')
+        input__email.setAttribute('placeholder','Este campo es obligatorio')
+        form__coments[0].classList.add('hidden')            
+        form__coments[1].classList.remove('hidden') 
+        e.preventDefault()
+    } else {
+        e.submit
     }
 });
+
+    window.addEventListener('load', () => {
+        input__nombre.value = '';
+        input__email.value = '';
+        input__mensaje.value = '';
+    })

@@ -1,25 +1,62 @@
 @media (min-width: 768px) and (max-width: 1023px) {
+    body, header {
+        background: url(../assets/backgrounds/background-tablet.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
     body {
-        max-width: 768px;
+        max-width: 90%;
     }
 
-    .home header .logo {
-        font-size: 24px;
+    header {
+        max-width: 100%;
     }
 
-    .home header img { 
-        height: 30px;
-        width: 30px;
+    #home header .logo {
+        font-size: 22px;
     }
 
-    .about-container {
+    #home header #hamburguer,  
+    #home header #close { 
+        height: 33px;
+        width: 40px;
+    }
+
+    #home .img-personal img {
+        width: 180px;
+        height: 180px;
+    }
+
+    #home .name-container {
+        margin-top: 15px;
+    }
+
+    .scroll-box a {
+        margin-top: 12px;
+    }
+
+    .title {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    #about {
         justify-content: space-around;
+        width: 90%;
+    }
+
+    .skills-section,
+    #portfolio {
+        margin-top: 0;
+    }
+
+    .portfolio-card {
+        width: 60%;
     }
  
-    .portfolio-section {
-        margin-top: 1em;
-    }
-
     .text-container {
         height: 15%;
     }
@@ -27,21 +64,44 @@
     .portfolio-card:hover .text-container {
         height: 30%;
     }
+
+    .formation-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .formation-card {
+        width: 45%;
+        height: 220px;
+    }
     
-    .contact-container {
-        margin-top: 5em;
+    #contact {
+        margin-top: 3em;
+        width: 70%;
+        padding-bottom: 3em;
     }
 
     .form {
         width: 100%;
     }
 
-    .scroll-box a img {
-        margin-top: 2em;
+    #contact .scroll-box a img {
+        margin-top: 1em;
     }
 
     .social-media .icon {
         width: 28px;
         height: 28px;
+        margin: 0 10px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .footer h5 {
+        margin-left: 10px;
     }
 }

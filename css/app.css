@@ -1,21 +1,53 @@
 @media (min-width: 1024px) {
-    body {
-        max-width: 1200px;
-        font-size: 18px;
-        background: url(../assets/backgrounds/Simple\ Shiny\(2\).svg);
+    body, header {
+        max-width: 1300px;
+        font-size: 20px;
+        background: url(../assets/backgrounds/background-web-app.svg);
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
 
-    .home header .logo {
-        font-size: 24px;
+    #home header .logo {
+        font-size: 20px;
+    }
+    
+    #home header #hamburguer,
+    #home header #close { 
+        height: 36px;
+        width: 44px;
+    }
+    
+    /* .nav-fullscreen {
+        width: 70%;
+        height: 30px;
+        box-shadow: none;  
+        top: 1vh;
+        right: 3%;
+        align-items: flex-end;
+    }
+    
+    .navlist-fullscreen {
+        flex-direction: row;
+        display: flex;
+        font-weight: 300;
+    } */
+
+    #home header nav ul li {
+        padding: 18px 3px;
+        border-bottom: 1px solid #1C82AD;
     }
 
-    .home header img { 
-        height: 30px;
-        width: 30px;
+    #home header nav ul li a {
+        font-size: 18px;
+        padding: 10px;
+        margin: 20px;
+    }
+
+    .active{
+        border-bottom: 1px solid #03C988;
+        transition: .5s;
     }
 
     main .img-personal img {
@@ -23,42 +55,78 @@
         height: 200px;
     }
 
+    .name-container {
+        margin-top: 30px;
+    }
+
     .title{
-        font-size: 22px;
+        font-size: 24px;
         font-weight: 600;
     }
 
-    .portfolio-section,
+    #about {
+        margin: auto;
+        justify-content: space-around;
+        width: 80%;
+    }
+
+    .skills-section {
+        margin-top: 0;
+    }
+
+    #portfolio {
+        margin-top: 0;
+    }
+
     .portfolio-container {
-        margin-top: 1em;
+        margin-top: 10px;
     }
 
     .portfolio-card {
         width: 40%;
         margin: 20px auto;
+        margin: 30px auto;
     }
 
     .text-container {
-        height: 18%;
+        height: 15%;
     }
     
     .portfolio-card:hover .text-container {
-        height: 35%;
+        height: 30%;
     }
 
-    .study-container {
+    #formation {
+        margin-top: 8em;
+    }   
+
+    .formation-container {
         margin: 2em 0;
         flex-direction: row;
         gap: 3em;
     }
     
-    .contact-container {
+    #contact {
         margin-top: 5em;
     }
+    
+    form,
+    #contact p {
+        width: 50%;
+    }
 
-    .form {
+    .up-arrow {
+        margin-bottom: 3em;
+    }
+
+    .footer, 
+    .footer .social-media {
+        gap: 1em;
+    }
+
+    .footer {
         display: flex;
-        width: 800x;
+        justify-content: center;
     }
 
 }

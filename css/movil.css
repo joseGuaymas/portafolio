@@ -16,7 +16,11 @@
 body {
     min-width: 319px;
     max-width: 320px;
-    background-image: url(../assets/backgrounds/Simple\ Shiny\(3\).svg);
+}
+
+body,
+header {
+    background-image: url(../assets/backgrounds/background-movil.svg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,7 +28,7 @@ body {
     margin: auto;
 }
 
-.home{
+#home{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,8 +40,12 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 5px auto;
-    gap: 80vw;
+    margin: auto;
+    width: 100%;
+    height: 5%;
+    gap: 85vw;
+    position: fixed;
+    z-index: 1;
 }
 
 header .logo {
@@ -46,8 +54,18 @@ header .logo {
     font-size: 20px;
     position: absolute;
     left: 5%;
+    top: 1vh;
     font-family: 'Space Mono', monospace;
     cursor: pointer;
+}
+
+#home header #hamburguer {
+    width: 37px;
+    height: 29px;
+}
+
+img {
+    z-index: 0;
 }
 
 nav {
@@ -58,48 +76,52 @@ nav {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    z-index: 10;
     justify-content: space-evenly;
     align-items: center;
     transition: transform .3s ease-in;
     transform: translateX(110%) translateY(-80%); 
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
-    z-index: 1;
-    background-color: #00337C;
-    border-radius: 0 5%;
+    background: #00337C;
+
 }
 
-.home header #hamburguer,
-.home header nav #close {
+#home header nav #close {
+    position: absolute;
+}
+
+#home header #hamburguer,
+#home header nav #close {
     position: absolute;
     right: 5vw;
     top: 1vh;
     cursor: pointer;
 }
 
-.home header nav ul,
-.about-container .skills-section ul {
+#home header nav ul,
+#about .skills-section ul {
     list-style: none;
 }
 
-.home header nav ul {
+#home header nav ul {
     margin: 0;
 }
 
-.home header nav ul li {
-    border-bottom: 1px solid #1C82AD;
+#home header nav ul li {
     margin: 15px;
     text-align: center;
     padding: 15px;
+    border-bottom: 1px solid #1C82AD;
     border-radius: 2px;
 }
 
-.home header nav ul li:hover, 
-.home header nav ul li:active {
+#home header nav ul li:hover, 
+#home header nav ul li:active {
     border-bottom: 1px solid #03C988;
     transition: .5s;
 }
 
-.home header nav ul li a {
+#home header nav ul li a {
     color: #F0F3F2;
     text-decoration: none;
     padding: 30px 0;
@@ -109,13 +131,19 @@ nav {
     transform: translate(0%);
 }
 
-main .img-personal {
+main {
+    margin-top: 8em;
+}
+
+.img-personal {
     display: flex;
     justify-content: center;
     padding-bottom: 30px;
 }
 
-main .img-personal img {
+.img-personal img {
+    margin: auto;
+    display: block;
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -139,39 +167,38 @@ main .img-personal img {
     padding-bottom: 15px;
 }
 
-.home main .name-container h3 {
+#home main .name-container h3 {
     font-weight: 300;
     color: #03C988;
     padding: 5px 0;
 }
 
 .scroll-box {
-    display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 .scroll-box p {
     text-decoration: none;
+    margin-top: 20px;
     color: #03C988;
-    font-size: inherit;
     font-weight: 300;
 }
 
 .scroll-box a {
-    display: flex;
-    margin: 8px auto;
     width: 32px;
     height: 32px;
 }
 
-.scroll-box a .down-arrow,
-.up-arrow {
-    width: 100%;
-    height: 100%;
+.scroll-box a .down-arrow {
+    margin: 15px auto;
+    display: block;
+    width: 40%;
+    height: 50%;
 }
 
-.about-container {
+
+#about {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -187,9 +214,10 @@ main .img-personal img {
     font-weight: 600;
     font-size: 18px;
     padding-bottom: 20px;
+    margin-top: 3em;
 }
 
-.about-container p {
+#about p {
     font-weight: 300;
     font-size: 16px;
     text-align: left;
@@ -198,13 +226,11 @@ main .img-personal img {
 }
 
 .skills-section {
-    margin-top: 2em;
-    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     color: #F0F3F2;
-    position: relative;
 }
+
 
 .skills-list ul .bar {
     height: 10px;
@@ -215,22 +241,22 @@ main .img-personal img {
 }
 
 .skills-list ul .html {
-    width: 70%;
+    width: 60%;
     background-color: #1C82AD;
 }
 
 .skills-list ul .css {
-    width: 50%;
+    width: 45%;
     background-color: #1C82AD;
 }
 
 .skills-list ul .js {
-    width: 60%;
+    width: 55%;
     background-color: #1C82AD;
 }
 
 .skills-list ul .bootstrap {
-    width: 60%;
+    width: 45%;
     background-color: #1C82AD;
 }
 
@@ -240,7 +266,7 @@ main .img-personal img {
 }
 
 .skills-list ul .sql {
-    width: 70%;
+    width: 65%;
     background-color: #1C82AD;
 }
 
@@ -250,7 +276,7 @@ main .img-personal img {
 }
 
 .skills-list ul .git {
-    width: 70%;
+    width: 55%;
     background-color: #1C82AD;
 }
 
@@ -271,7 +297,7 @@ main .img-personal img {
     right: 0;
 }
 
-.portfolio-section {
+#portfolio {
     margin-top: 8em;
     display: flex;
     align-content: center;
@@ -304,21 +330,20 @@ main .img-personal img {
 .text-container {
     position: absolute;
     color: #F0F3F2;
-    font-size: 16px;
     background: #00347ca4;
     height: 25%;
     width: 100%;
     transition: .5s;
-    z-index: 1;
     bottom: 0;
     opacity: 0.5;
-    padding-top: 3px;
+    padding-top: 1px;
     padding-left: 7px;
 }
 
 .text-container h3 {
     font-weight: bold;
     opacity: 1;
+    font-size: 16px;
 }
 
 .text-container a {
@@ -326,7 +351,7 @@ main .img-personal img {
 }
 
 .text-container a span {
-    padding: 8px;
+    padding: 6px;
     color: #F0F3F2;
     background: #1C82AD;   
     visibility: hidden; 
@@ -342,9 +367,9 @@ main .img-personal img {
 .portfolio-card:hover .text-container {
     height: 50%;
     display: flex;
-    gap: 10px;
+    gap: 1px;
     flex-direction: column;
-    font-weight: 400;
+    font-weight: 300;
     opacity: 0.9;
     background: #00337C;
 }
@@ -352,30 +377,30 @@ main .img-personal img {
 .portfolio-card:hover .text-container span {
     visibility: visible;
     border-radius: 10px;
-    margin: 7% 0;
+    margin: 1% 0;
 }
 
 .portfolio-card:hover img {
     transform: scale(1.1) rotate(.1deg);
 }
 
-.study-section {
-    margin-top: 3em;
+#formation {
+    margin-top: 8em;
 }
 
-.study-container {
+.formation-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.study-card {
+.formation-card {
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
-.study-card img {
+.formation-card img {
     margin: 1em;
     width: 170px;
     height: 170px;
@@ -386,15 +411,15 @@ main .img-personal img {
     box-shadow: 3px 3px 5px #1C82AD;
 }
 
-.study-card img:is(:hover, :focus) {
+.formation-card img:is(:hover, :focus) {
     filter: grayscale(0%)
 }
 
-.contact-container {
+#contact {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    margin: 5em auto 0;
+    margin: 3em auto 0;
     padding-bottom: 1em;
     height: 70vh;
     width: 100%;
@@ -432,11 +457,17 @@ form input, textarea {
     cursor: pointer;
 }
 
-.contact-container p {
+#contact p {
     font-size: 14px;
     font-weight: 300;
+    width: 90%;
     font-style: italic;
     color: #1C82AD;
+    margin: auto;
+}
+
+.error {
+    border-bottom: 0.1px solid red;
 }
 
 .hidden {
@@ -444,12 +475,13 @@ form input, textarea {
 }
 
 .up-arrow {
+    display: block;
+    margin: 10px auto 50px;
     transform: rotate(180deg);
 }
 
 .footer {
-    display: flex;
-    position: relative;
+    display: inline-flex;
     margin: 20px;
     align-items: center;
     justify-content: center;
@@ -469,7 +501,7 @@ form input, textarea {
 .icon {
     height: 24px;
     width: 24px;
-    margin: 0 20px 0 5px;
+    margin: 0 10px 0 0;
 }
 
 .footer h5 {
