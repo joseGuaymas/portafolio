@@ -1,6 +1,6 @@
 @media (min-width: 1024px) {
     body, header {
-        max-width: 1300px;
+        max-width: 90%;
         font-size: 20px;
         background: url(../assets/backgrounds/background-web-app.svg);
         background-attachment: fixed;
@@ -13,37 +13,37 @@
         font-size: 20px;
     }
     
-    #home header #hamburguer,
-    #home header #close { 
-        height: 36px;
-        width: 44px;
-    }
-    
-    /* .nav-fullscreen {
-        width: 70%;
-        height: 30px;
+    .navlist-fullscreen {
+        display: inline-block;
+        position: absolute;
         box-shadow: none;  
         top: 1vh;
-        right: 3%;
-        align-items: flex-end;
+        right: 0;
+        font-weight: 300;
     }
     
-    .navlist-fullscreen {
-        flex-direction: row;
-        display: flex;
-        font-weight: 300;
-    } */
-
-    #home header nav ul li {
-        padding: 18px 3px;
-        border-bottom: 1px solid #1C82AD;
+    header ul li {
+        display: inline;
+        border-bottom: 3px inset #1C82AD;
+        margin: 6px;
+        padding: 6px;
+        border-radius: 10%;
     }
-
-    #home header nav ul li a {
+    
+    header ul li a {
+        color: #F0F3F2;
         font-size: 18px;
-        padding: 10px;
-        margin: 20px;
+        /* font-weight: 300; */
+        margin: 5px;
+        text-decoration: none;
     }
+
+    header ul li:hover, 
+    header ul li:active {
+    border-bottom: 3px inset #03C988;
+    color: #F0F3F2;
+    transition: .8s;
+}
 
     .scroll-box {
         margin: 2em;

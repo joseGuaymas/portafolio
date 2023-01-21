@@ -51,15 +51,17 @@ header {
 header .logo {
     color: #03C988;
     display: flex;
-    font-size: 20px;
+    /* font-size: 20px; */
     position: absolute;
     left: 5%;
     top: 1vh;
     font-family: 'Space Mono', monospace;
     cursor: pointer;
+    max-width: 5px;
+    max-height: 20px;
 }
 
-#home header #hamburguer {
+#hamburguer {
     width: 37px;
     height: 29px;
 }
@@ -83,7 +85,6 @@ nav {
     transform: translateX(110%) translateY(-80%); 
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
     background: #00337C;
-
 }
 
 #home header nav #close {
@@ -91,7 +92,7 @@ nav {
 }
 
 #home header #hamburguer,
-#home header nav #close {
+#home header #close {
     position: absolute;
     right: 5vw;
     top: 1vh;
@@ -130,6 +131,8 @@ nav {
 .mostrar-menu {
     transform: translate(0%);
 }
+
+/* FOTO PERSONAL, NOMBRE Y TÍTULO */
 
 main {
     margin-top: 8em;
@@ -173,6 +176,8 @@ main {
     padding: 5px 0;
 }
 
+/* ÍCONO ARROW */
+
 .scroll-box {
     flex-direction: column;
     justify-content: center;
@@ -198,6 +203,7 @@ main {
     height: 50%;
 }
 
+/* SECCIÓN ABOUT */
 
 #about {
     display: flex;
@@ -226,12 +232,13 @@ main {
     color: #F0F3F2;
 }
 
+/* DIV DE SKILLS */
+
 .skills-section {
     flex-direction: column;
     flex-wrap: wrap;
     color: #F0F3F2;
 }
-
 
 .skills-list ul .bar {
     height: 10px;
@@ -298,16 +305,16 @@ main {
     right: 0;
 }
 
+/* SECCIÓN PORTFOLIO */
+
 #portfolio {
-    margin-top: 8em;
-    display: flex;
+    margin-top: 12em;
     align-content: center;
     justify-content: center;    
     flex-direction: column;
-}
+}  b
 
 .portfolio-container {
-    display: flex;
     flex-wrap: wrap;
 }
  
@@ -326,6 +333,8 @@ main {
     border-radius: 5px;
     transition: .5s;
 } 
+
+/* DIV CON ENLACES A LOS REPOS Y LAS DEMOS */
 
 .text-container {
     position: absolute;
@@ -384,6 +393,8 @@ main {
     transform: scale(1.1) rotate(.1deg);
 }
 
+/* SECCIÓN CON ACADEMIAS DE FORMACIÓN */
+
 #formation {
     margin-top: 5em;
 }
@@ -414,6 +425,8 @@ main {
 .formation-card img:is(:hover, :focus) {
     filter: grayscale(0%)
 }
+
+/* SECCIÓN CONTACTO */ 
 
 #contact {
     display: flex;
@@ -462,7 +475,7 @@ form input, textarea {
     font-weight: 300;
     width: 90%;
     font-style: italic;
-    color: #1C82AD;
+    color: #F0F3F2;
     margin: auto;
 }
 
@@ -523,6 +536,8 @@ form input, textarea {
     flex-direction: column;
     height: 80vh;
 }
+
+/* PÁGINA QUE SE MUESTRA AL ENVIAR EL FORMULARIO DE CONTACTO */
 
 .thanks-container h2, h3 {
     font-size: 18px;
