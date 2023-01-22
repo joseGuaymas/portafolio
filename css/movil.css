@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap');
 
 *{
     margin: 0;
@@ -15,8 +15,15 @@
 
 body {
     min-width: 319px;
-    max-width: 320px;
+    max-width: 480px;
+    overflow-x: hidden;
 }
+
+.section {
+    width: 90%;
+    margin: auto;
+}
+
 
 body,
 header {
@@ -51,19 +58,25 @@ header {
 header .logo {
     color: #03C988;
     display: flex;
-    /* font-size: 20px; */
     position: absolute;
+    align-items: center;
     left: 5%;
     top: 1vh;
     font-family: 'Space Mono', monospace;
     cursor: pointer;
-    max-width: 5px;
-    max-height: 20px;
+    max-width: 80px;
+    max-height: 25px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
 }
 
 #hamburguer {
-    width: 37px;
-    height: 29px;
+    width: 25px;
+    height: 23px;
+    filter:hue-rotate( 8px 4px #03C988);
 }
 
 img {
@@ -216,10 +229,10 @@ main {
 
 .title {
     color: #03C988;
-    text-decoration: underline;
+    font-family: 'Red Hat Mono', monospace;
     text-align: center;
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 400;
+    font-size: 20px;
     padding-bottom: 20px;
     margin-top: 3em;
 }
@@ -374,7 +387,7 @@ main {
 }
 
 .portfolio-card:hover .text-container {
-    height: 50%;
+    height: 40%;
     display: flex;
     gap: 1px;
     flex-direction: column;
@@ -456,18 +469,20 @@ form label {
 }
 
 form input, textarea {
-    background: #1C82AD;
+    background: #F0F3F2;
     border-color: #03C988;
     border-radius: 5px 3px;
     padding: 5px;
     outline: none;
     resize: none;
-    color: #F0F3F2;
+    color: #00337C;
     font-size: 16px;
 }
 
 .form-submit {
     cursor: pointer;
+    color: #F0F3F2;
+    background: #1C82AD;
 }
 
 #contact p {
@@ -475,7 +490,7 @@ form input, textarea {
     font-weight: 300;
     width: 90%;
     font-style: italic;
-    color: #F0F3F2;
+    color: #1C82AD;
     margin: auto;
 }
 
@@ -487,42 +502,72 @@ form input, textarea {
     display: none;
 }
 
-.scroll-box a .up-arrow {
-    display: block;
-    margin: 10px auto 50px;
-    transform: rotate(180deg);
-    width: 34.5;
-    height: 34.5;
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: 100%;
+    padding: 0 15%;
+    justify-content: center;
+    gap: 20px;
 }
 
-.footer {
-    display: inline-flex;
-    margin: 20px;
-    align-items: center;
-    justify-content: center;
+a .up-arrow {
+    display: inline;
+    margin: 5px auto;
+    transform: rotate(180deg);
+    width: 30px;
+    height: 30px;
+}
+
+.up-arrow-box {
+    width: 100%;
+    text-align: center;
+}
+
+footer .links {
+    width: 100%;
+
+}
+
+footer .links ul {
+    list-style: none;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+footer .links ul li {
+    min-width: 5%;
+    display: inline-block;
+}
+
+footer .links ul li a {
+    color: #03C988;
+    margin: 8px;
+    text-decoration: none;
 }
 
 .social-media {
-    display: flex;
-    justify-content: flex-start;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
 }
 
 .social-media a {
-    font-weight: 700;
-    display: flex;
-    flex-direction: row;
+    display: inline-flex;
+    height: 100%;
+    width: 45px;
 }
 
-.icon {
-    height: 24px;
-    width: 24px;
-    margin: 0 10px 0 0;
-}
-
-.footer h5 {
+footer p {
+    border-top: .5px solid #03C988;
     font-weight: 300;
-    color: #F0F3F2;
+    padding-top: 10px;
+    color: #03C988;
 }
+
+/* PÁGINA QUE SE MUESTRA AL ENVIAR EL FORMULARIO DE CONTACTO */
 
 .thanks-page {
     min-height: 100vh;
@@ -536,8 +581,6 @@ form input, textarea {
     flex-direction: column;
     height: 80vh;
 }
-
-/* PÁGINA QUE SE MUESTRA AL ENVIAR EL FORMULARIO DE CONTACTO */
 
 .thanks-container h2, h3 {
     font-size: 18px;

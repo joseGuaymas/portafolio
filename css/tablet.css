@@ -8,7 +8,7 @@
     }
 
     body {
-        max-width: 90%;
+        max-width: 800px;
     }
 
     header {
@@ -85,23 +85,38 @@
         width: 100%;
     }
 
-    #contact .scroll-box a img {
-        margin-top: 1em;
+    footer {
+        display: block;
+        text-align: center;
     }
-
-    .social-media .icon {
-        width: 28px;
-        height: 28px;
-        margin: 0 10px;
+    
+    footer .up-arrow-box,
+    footer .social-media,
+    footer .links {
+        text-align: center;
+        display: inline-block;
+        width: 30%;
     }
-
-    .footer {
+    
+    footer .footer-name { 
+        width: 100%;
+    }
+    
+    footer .up-arrow-box {
+        vertical-align: auto;
+    }
+    
+    footer .footer-name {
+        text-align: center;
+    }
+    
+    footer .footer-name p {
         display: flex;
+        font-size: 18px;
         justify-content: center;
         align-content: center;
+        margin: 20px auto;
     }
-
-    .footer h5 {
-        margin-left: 10px;
-    }
+    
+    
 }
