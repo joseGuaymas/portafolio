@@ -54,8 +54,8 @@ form.addEventListener('submit', (e) => {
     if (!validarPalabra(input__nombre.value) || (!validarPalabra(input__email.value)) ) {
         input__nombre.setAttribute('placeholder','Este campo es obligatorio')
         input__email.setAttribute('placeholder','Este campo es obligatorio')
-        form__coments[0].classList.add('hidden')            
-        form__coments[1].classList.remove('hidden') 
+        form__coments[0].classList.toggle('hidden')            
+        form__coments[1].classList.toggle('hidden') 
         e.preventDefault()
     } else {
         e.submit

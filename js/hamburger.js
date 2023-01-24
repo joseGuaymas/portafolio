@@ -36,21 +36,20 @@ function hideMenu() {
     navlist.classList.add('hidden')
 }
 
-console.log(window.innerWidth)
-
-if (window.innerWidth < 1024) {
-    hideMenu()
-    console.log('ok')
-} else {
-    fullMenu()
-}
-    
-    
-window.addEventListener('resize', () => {
+function screenWith() {
     if (window.innerWidth < 1024) {
         hideMenu()
     } else {
         fullMenu()
-    }
+    }   
+}
+    
+window.addEventListener('load', () => {
+    screenWith()
+})
+
+
+window.addEventListener('resize', () => {
+    screenWith()
 })
 

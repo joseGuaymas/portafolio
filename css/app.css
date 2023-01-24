@@ -1,6 +1,5 @@
 @media (min-width: 1024px) {
     body, header {
-        max-width: 90%;
         font-size: 20px;
         background: url(../assets/backgrounds/background-web-app.svg);
         background-attachment: fixed;
@@ -24,22 +23,22 @@
     
     header ul li {
         display: inline;
-        border-bottom: .5px inset #F0F3F2;
+        border-bottom: .5px inset #352F30;
         margin: 6px;
         padding: 6px;
-        border-radius: 10%;
+        border-radius: 5%;
     }
     
     header ul li a {
         color: #03C988;
         font-size: 18px;
-        /* font-weight: 300; */
         margin: 5px;
         text-decoration: none;
     }
 
     header ul li:hover, 
-    header ul li:active {
+    header ul li:active,
+    .active {
     border-bottom: 3px inset #03C988;
     color: #F0F3F2;
     transition: .8s;
@@ -76,37 +75,41 @@
     #about {
         margin: auto;
         justify-content: space-around;
-        width: 80%;
+        width: 60%;
     }
 
     .skills-section {
         margin-top: 0;
     }
-
+    
     #portfolio {
         margin-top: 0;
+        display: flex;
+        flex-wrap: wrap;
     }
-
+    
     .portfolio-container {
         margin-top: 10px;
+        text-align: center;
     }
-
+    
     .portfolio-card {
-        width: 40%;
-        margin: 20px auto;
-        margin: 30px auto;
+        width: 30%;
+        display: inline-block;
+        margin: 20px;
+        text-align: start;
     }
 
     .text-container {
-        height: 15%;
+        height: 18%;
     }
     
     .portfolio-card:hover .text-container {
-        height: 28%;
+        height: 33%;
     }
 
     #formation {
-        margin-top: 8em;
+        margin: 3em auto;
     }   
 
     .formation-container {
@@ -116,7 +119,8 @@
     }
     
     #contact {
-        margin-top: 5em;
+        width: 100%;
+        margin: 3em auto;
     }
     
     form,
@@ -124,20 +128,18 @@
         width: 50%;
     }
 
-    .scroll-box a .up-arrow {
-        width: 38.3px;
-        height: 38.3px;
-        margin-bottom: 3em;
+    footer {
+        gap: 0;
     }
 
-    .footer, 
-    .footer .social-media {
-        gap: 1em;
+    footer .liks {
+        display: block;
+        width: 60%;
+        flex-wrap: wrap;
     }
 
-    .footer {
-        display: flex;
-        justify-content: center;
+    footer .links ul li {
+        width: 20%;
     }
 
 }

@@ -14,10 +14,10 @@
     <section id="home" class="section">
         <header>
             <div>
-                <a class="logo" href="#home"><img src="https://see.fontimg.com/api/renderfont4/GOjVy/eyJyIjoiZnMiLCJoIjoyNiwidyI6MTAwMCwiZnMiOjI2LCJmZ2MiOiIjMEJCNDlDIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/PEpHLz4/qeraldin.png" alt="Serif fonts"></a>
+                <a class="logo" href="#home"><img src="./assets/iconos/logo.png"></a>
             </div>
             <img id="hamburguer" src="./assets/iconos/hamburguer.png" alt="">
-
+            
             <nav>
                 <img id="close" class="" src="./assets/iconos/close.png" alt="">
                 <ul>
@@ -29,16 +29,16 @@
                 </ul>
             </nav>
             <ul id="navlist" class="hidden">
-                <li><a href="#home">Home</a></li> 
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portafolio</a></li>
-                <li><a href="#formation">Formación</a></li>
-                <li><a href="#contact">Contacto</a></li>
+                <li class="menu-item" data-url="home"><a href="#home">Home</a></li> 
+                <li class="menu-item" data-url="about"><a href="#about">About</a></li>
+                <li class="menu-item" data-url="portfolio"><a href="#portfolio">Portafolio</a></li>
+                <li class="menu-item" data-url="formation"><a href="#formation">Formación</a></li>
+                <li class="menu-item" data-url="contact"><a href="#contact">Contacto</a></li>
             </ul>
         </header>
         <main>
             <div class="img-personal">
-                <img src="./assets/pexels-junior-teixeira-2047905.jpg" alt="">
+                <img src="./assets/WhatsApp Image 2023-01-23 at 8.44.04 PM(3).jpeg" alt="">
             </div>
             
             <div class="name-container">
@@ -169,7 +169,7 @@
             </div>
         </div>
     </section>
-
+    
     <section class="section" id="contact">
         <form id="form" action="https://formsubmit.co/josedguaymas@gmail.com" method="POST">
             <h2 class="title">Contacto</h2>
@@ -186,33 +186,31 @@
         </form>
 
         <p id="form-coment">(*) campos obligatorios</p>
-        <p id="form-coment" class="hidden">Uno o más campos tienen errores. Por favor revisa e inténtalo de nuevo.</p>
-
+        <p class="hidden" id="form-coment">Uno o más campos tienen errores. Por favor revisa e inténtalo de nuevo.</p>
     </section>
     
     <footer>        
-        <div class="up-arrow-box">
-            <a href="#home"> <img class="up-arrow" src="./assets/iconos/arrow.png" alt="up arrow icon"></a>
-        </div>
         <div class="links">
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portafolio</a></li>
-                <li><a href="#formation">Formación</a></li>
+                <li> <a href="#home"> <img class="footer-icon" src="./assets/iconos/iconos-footer/home.svg"> Home</a></li> 
+                <li> <a href="#about"> <img class="footer-icon" src="./assets/iconos/iconos-footer/about.svg"> About</a></li>
+                <li> <a href="#portfolio"> <img class="footer-icon" src="./assets/iconos/iconos-footer/portfolio.svg"> Portafolio</a></li>
+                <li> <a href="#formation"> <img class="footer-icon" src="./assets/iconos/iconos-footer/formation.png"> Formación</a></li>
             </ul>
+        </div>
+        <div class="footer-name">
+            <a href="https://www.fontspace.com/category/fun"><img src="https://see.fontimg.com/api/renderfont4/2Od0W/eyJyIjoiZnMiLCJoIjoyNiwidyI6MTAwMCwiZnMiOjI2LCJmZ2MiOiIjMDQxMzEwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/Sm9zw6kgR3VheW1hcw/little-baby.png" alt="Fun fonts"></a>
         </div>
         <div class="social-media">
             <a href="https://www.linkedin.com/in/jose-guaymas/" target="_blank"><img class="icon" src="./assets/iconos/linkedin.svg"></a>
             <a href="https://github.com/joseGuaymas" target="_blank"><img class="icon" src="./assets/iconos/github.svg"></a>
-        </div>
-        <div class="footer-name">
-            <p>© José Guaymas</p>
         </div>
 
     </footer>
 
     <script src="./js/hamburger.js"></script>
     <script src="./js/form-validation.js"></script>
+    <script src="./js/animation-menu.js"></script>
 
 </body>
 </html>

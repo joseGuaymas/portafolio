@@ -88,16 +88,9 @@
     footer {
         display: block;
         text-align: center;
+        margin-left: -6%;
     }
-    
-    footer .up-arrow-box,
-    footer .social-media,
-    footer .links {
-        text-align: center;
-        display: inline-block;
-        width: 30%;
-    }
-    
+       
     footer .footer-name { 
         width: 100%;
     }
@@ -109,14 +102,5 @@
     footer .footer-name {
         text-align: center;
     }
-    
-    footer .footer-name p {
-        display: flex;
-        font-size: 18px;
-        justify-content: center;
-        align-content: center;
-        margin: 20px auto;
-    }
-    
     
 }
