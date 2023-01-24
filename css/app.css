@@ -100,14 +100,6 @@
         text-align: start;
     }
 
-    .text-container {
-        height: 18%;
-    }
-    
-    .portfolio-card:hover .text-container {
-        height: 33%;
-    }
-
     #formation {
         margin: 3em auto;
     }   

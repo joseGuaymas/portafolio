@@ -54,14 +54,6 @@
         width: 50%;
     }
  
-    .text-container {
-        height: 15%;
-    }
-    
-    .portfolio-card:hover .text-container {
-        height: 30%;
-    }
-
     .formation-container {
         flex-direction: row;
         flex-wrap: wrap;
