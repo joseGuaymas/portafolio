@@ -7,10 +7,6 @@
         background-attachment: fixed;
     }
 
-    body {
-        max-width: 800px;
-    }
-
     header {
         max-width: 100%;
     }
@@ -44,8 +40,9 @@
     }
 
     #about {
+        margin: auto;
         justify-content: space-around;
-        width: 90%;
+        width: 80%;
     }
 
     .skills-section,
@@ -54,7 +51,7 @@
     }
 
     .portfolio-card {
-        width: 60%;
+        width: 50%;
     }
  
     .text-container {
@@ -85,12 +82,6 @@
         width: 100%;
     }
 
-    footer {
-        display: block;
-        text-align: center;
-        margin-left: -6%;
-    }
-       
     footer .footer-name { 
         width: 100%;
     }

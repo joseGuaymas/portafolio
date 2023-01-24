@@ -49,7 +49,7 @@ header {
     margin: 0 auto;
     padding: 3px;
     width: 100%;
-    height: 5%;
+    height: 7%;
     overflow: hidden;
     gap: 85vw;
     position: fixed;
@@ -155,7 +155,7 @@ main {
     display: flex;
     margin: auto;
     justify-content: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     width: 150px;
     height: 180px;
 
@@ -222,7 +222,6 @@ main {
 #about {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     justify-content: space-between;
     padding-bottom: 40px;
     margin: 2em 2em 0;
@@ -268,27 +267,27 @@ main {
 }
 
 .skills-list ul .css {
-    width: 45%;
+    width: 50%;
     background-color: #03C988;
 }
 
 .skills-list ul .js {
-    width: 55%;
+    width: 60%;
     background-color: #03C988;
 }
 
 .skills-list ul .bootstrap {
-    width: 45%;
-    background-color: #03C988;
-}
-
-.skills-list ul .python {
     width: 40%;
     background-color: #03C988;
 }
 
+.skills-list ul .python {
+    width: 30%;
+    background-color: #03C988;
+}
+
 .skills-list ul .sql {
-    width: 65%;
+    width: 60%;
     background-color: #03C988;
 }
 
@@ -298,7 +297,7 @@ main {
 }
 
 .skills-list ul .git {
-    width: 55%;
+    width: 50%;
     background-color: #03C988;
 }
 
@@ -322,11 +321,11 @@ main {
 /* SECCIÓN PORTFOLIO */
 
 #portfolio {
-    margin-top: 3em;
+    margin-top: 1em;
     align-content: center;
     justify-content: center;    
     flex-direction: column;
-}  b
+}  
 
 .portfolio-container {
     flex-wrap: wrap;
@@ -417,6 +416,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: .5em;
 }
 
 .formation-card {
@@ -446,9 +446,8 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    margin: 3em auto 0;
+    margin: 1em auto 2em;
     padding-bottom: 1em;
-    height: 70vh;
     width: 100%;
     justify-content: center;
 }
@@ -504,13 +503,14 @@ form input, textarea {
 
 footer {
     display: flex;
+    margin: auto;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-left: -4%;
     min-width: 100vw;
-    padding: 2em auto 1em;
+    padding: 1em auto 1em;
     justify-content: center;
     background: #03C988;
-    border-top:double 1px #231F20;
+    border-top: double 1px #231F20;
 }
 
 footer .links {
@@ -539,7 +539,7 @@ footer .links ul li a {
     font-weight: 400;
     margin: 8px;
     text-decoration: none;
-    gap: 5px;
+    gap: 4px;
     width: fit-content;
     margin: auto;
 }
@@ -554,7 +554,7 @@ footer .links ul li a:hover,
 .footer-name {
     display: flex;
     width: 90%;
-    margin: 5px auto;
+    margin: 1px auto;
     align-items: center;
     justify-content: space-around;
 }
@@ -565,8 +565,8 @@ footer .links ul li a:hover,
     justify-content: center;
     border-top: 1px inset #231F20;
     width: 90%;
-    height: 50px;
-    padding-top: 10px;
+    height: 40px;
+    padding-top: 5px;
 }
 
 .social-media a {
