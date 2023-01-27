@@ -244,6 +244,39 @@ main {
     color: #F0F3F2;
 }
 
+/* BOTÓN CV */
+
+.cv-box {
+    display: flex;
+    justify-content: center;
+    margin: 2em auto;
+}
+
+.cv-box a {
+    display: flex;
+    align-items: center;
+    border: #352F30 1px unset;
+    text-decoration: none;
+    gap: 5px;
+    color: #231F20;
+    background: #03C988;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 16px;
+    width: 150px;
+    transition: all 400ms ease-in;
+}
+
+.cv-box a img{
+    width: 20px;
+    height: 18px;
+}
+
+.cv-box a:hover {
+    transform: scale(1.05);
+    font-weight: bold;
+}
+
 /* DIV DE SKILLS */
 
 .skills-section {
@@ -444,7 +477,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    margin: 1em auto 2em;
+    margin: 1em auto 0;
     padding-bottom: 1em;
     width: 100%;
     justify-content: center;
@@ -499,6 +532,14 @@ form input, textarea {
     display: none;
 }
 
+.up-arrow {
+    display: flex;
+    margin: 2em auto 1em;
+    transform: rotate(180deg);
+    width: 30px;
+    height: 30px;
+}
+
 footer {
     display: flex;
     margin: auto;
@@ -511,50 +552,10 @@ footer {
     border-top: double 1px #231F20;
 }
 
-footer .links {
-    width: 100%;
-    padding: 10px 0;
-}
-
-footer .links ul {
-    list-style: none;
-    text-align: center;
-}
-
-footer .links ul li {
-    display: inline-block;
-    width: 40%;
-}
-
-footer .links ul li .footer-icon {
-    width: 20px;
-    height: 20px;
-}
-
-footer .links ul li a {
-    color: #231F20;
-    display: flex;
-    font-weight: 400;
-    margin: 8px;
-    text-decoration: none;
-    gap: 4px;
-    width: fit-content;
-    margin: auto;
-}
-
-footer .links ul li a:hover, 
 .social-media a:hover img {
     border-radius: 30%;
     background: #352f3017;
     background-size:auto;
-}
-
-.footer-name {
-    display: flex;
-    width: 90%;
-    margin: 1px auto;
-    align-items: center;
-    justify-content: space-around;
 }
 
 .social-media {

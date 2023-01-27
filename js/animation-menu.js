@@ -7,7 +7,6 @@ let functionObserver = entries => {
             menu__items.forEach(item => {
                 let i = item.dataset.url
                 if (entry.target.id === i) {
-                    history.pushState(null, "", i)
                     if (i === 'home') {
                         item.classList.add('active')
                     }
