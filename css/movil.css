@@ -269,74 +269,39 @@ main {
 /* DIV DE SKILLS */
 
 .skills-section {
+    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;
     color: #F0F3F2;
 }
 
-.skills-list ul .bar {
-    height: 10px;
-    border-radius: 10px;
-    position: relative;
-    margin: 30px 0;
-    border: #231F20 1px solid;
+.skills-section ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.skills-list ul .html {
-    width: 60%;
-    background-color: #03C988;
+.skills-list ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    margin: 15px;
 }
 
-.skills-list ul .css {
-    width: 50%;
-    background-color: #03C988;
+.skills-list .skill-img {
+    width: 55px;
+    height: 55px;
+    padding-top: 10px;
+    justify-content: center;
 }
 
-.skills-list ul .js {
-    width: 60%;
-    background-color: #03C988;
-}
-
-.skills-list ul .bootstrap {
-    width: 40%;
-    background-color: #03C988;
-}
-
-.skills-list ul .python {
-    width: 30%;
-    background-color: #03C988;
-}
-
-.skills-list ul .sql {
-    width: 60%;
-    background-color: #03C988;
-}
-
-.skills-list ul .node {
-    width: 50%;
-    background-color: #03C988;
-}
-
-.skills-list ul .git {
-    width: 50%;
-    background-color: #03C988;
-}
-
-.skills-list span {
-    font-size: 14px;
-    font-weight: 300;
-}
-
-.skills-list ul .skill-name {
-    position: absolute;
-    bottom: .6rem;
-    left: 0;
-}
-
-.skills-list ul .progress {
-    position: absolute;
-    bottom: .6rem;
-    right: 0;
+.skills-list .skill-img img {
+    width: 100%;
+    height: 100%;
 }
 
 /* SECCIÓN PORTFOLIO */

@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 780px) and (max-width: 1200px) {
     body, header {
         background: url(../assets/backgrounds/background-tablet.svg);
         background-repeat: no-repeat;
@@ -50,8 +50,17 @@
         margin-top: 0;
     }
 
+    .skills-section ul li {
+        margin: 20px; 
+    } 
+
+    .skills-list .skill-img {
+        width: 58px;
+        height: 58px;
+    }
+
     .portfolio-card {
-        width: 50%;
+        width: 65%;
     }
  
     .formation-container {
@@ -60,13 +69,13 @@
     }
 
     .formation-card {
-        width: 45%;
-        height: 220px;
+        width: 40%;
+        height: 200px;
     }
     
     #contact {
         margin-top: 3em;
-        width: 70%;
+        width: 80%;
         padding-bottom: 3em;
     }
 

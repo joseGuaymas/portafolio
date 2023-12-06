@@ -37,7 +37,7 @@ function hideMenu() {
 }
 
 function screenWith() {
-    if (window.innerWidth < 1080) {
+    if (window.innerWidth < 1200) {
         hideMenu()
     } else {
         fullMenu()
