@@ -79,11 +79,6 @@
         width: 60%;
     }
 
-    .boton-cv {
-        display: flex;
-        justify-content: center;
-    }
-
     .skills-section {
         margin-top: 0;
     }

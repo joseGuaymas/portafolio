@@ -266,6 +266,11 @@ main {
     text-align: center;
 }
 
+.boton-cv {
+    display: flex;
+    justify-content: center;
+}
+
 /* DIV DE SKILLS */
 
 .skills-section {
